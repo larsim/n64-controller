@@ -28,7 +28,7 @@ int main()
     _delay_ms(100);
 
     while(1)
-    {  
+    {
         n64_poll();
         ana = xaxis/4;
         if(buttons[N64_A] < N64_ZEROLEN) beep(160+ana);

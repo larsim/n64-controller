@@ -32,7 +32,7 @@ void beep_init()
     TCCR0B = (1<<CS00)|(1<<CS01);
 
     // Enable timer comparator interrupt A
-	TIMSK |= (1<<OCIE0A);
+    TIMSK |= (1<<OCIE0A);
 
     // Set comparator time
     OCR0A = 30;
